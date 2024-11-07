@@ -170,7 +170,7 @@ public class RoomController {
 		super();
 		chatListObsl = FXCollections.observableArrayList();
         // Khởi tạo PauseTransition để trì hoãn đóng popup 3 giây
-        popupDelay = new PauseTransition(Duration.seconds(3));
+        popupDelay = new PauseTransition(Duration.seconds(1));
         popupDelay.setOnFinished(event -> {
             if (popup != null) {
                 popup.hide();
